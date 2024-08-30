@@ -1,0 +1,14 @@
+{
+  "name": "Brand Search by logo.dev",
+  "id": "1410347118775462022",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
+  "editorType": ["figma"],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": ["https://img.logo.dev", "https://api.logo.dev"]
+  }
+}

@@ -1,0 +1,15 @@
+<h2>Brand Search by logo.dev</h2>
+<p>Query: <input id="query" value="" /></p>
+<button id="search">Search</button>
+<button id="cancel">Cancel</button>
+<script>
+  document.getElementById("search").onclick = () => {
+    const textbox = document.getElementById("query");
+    const query = textbox.value;
+    parent.postMessage({ pluginMessage: { type: "brand-search", query } }, "*");
+  };
+
+  document.getElementById("cancel").onclick = () => {
+    parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
+  };
+</script>
